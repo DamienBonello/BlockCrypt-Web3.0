@@ -1,6 +1,6 @@
 #BlockCrypt Research Platform - Web3.0 Development
 
-[![BlockCrypt](https://github.com/DamienBonello/BlockCrypt-Web3.0/Site_Snip.jpg)]
+[![BlockCrypt](https://github.com/DamienBonello/BlockCrypt-Web3.0/tree/main/Site_Snip.jpg)]
 
 Test Web Development Project; 
 
