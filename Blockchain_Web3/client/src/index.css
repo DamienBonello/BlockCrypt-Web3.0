@@ -14,11 +14,11 @@ body {
 }
 
 .gradient-bg-welcome {
-  background-color:#0f0e13;
+  background-color:#000000;
   background-image: 
-    radial-gradient(at 0% 0%, rgb(0, 0, 0) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(24, 51, 27) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, rgb(10, 124, 34) 0, transparent 50%);
+    radial-gradient(at 0% 0%, rgb(20, 20, 20) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, rgb(32, 81, 172) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(19, 86, 173) 0, transparent 50%);
 }
 
 .gradient-bg-services {

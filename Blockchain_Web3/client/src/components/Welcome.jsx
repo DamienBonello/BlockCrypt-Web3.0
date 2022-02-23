@@ -4,7 +4,7 @@ import { BsInfoCircle } from 'react-icons/bs';
 
 import { Loader } from './';
 
-const commonStyles = "min-h-[40px] sm:px-1 px-2 sm:min-w-[120px] flex justify-center items-center border-white border-2 p-1 bg-blue-700 text-sm font-normal text-white";
+const commonStyles = "min-h-[40px] sm:px-1 px-2 sm:min-w-[120px] flex justify-center items-center border-white border-2 p-1 bg-yellow-600 text-sm font-normal text-white";
 
 const Welcome = () => {
     const connectWallet = () => {
@@ -14,7 +14,7 @@ const Welcome = () => {
         <div className='flex w-full justify-center items-center'>
             <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4'>
                 <div className='flex flex-1 justify-start items-start flex-col md:mr-10'>
-                    <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
+                    <h1 className='text-3xl sm:text-5xl text-white py-1'>
                         Crpyto Insights <br /> brought to you simply.
                     </h1>
                     <p className='text-left mt-5 text-white font-light md:w-full w-full text-base'>
@@ -23,7 +23,7 @@ const Welcome = () => {
                     <button
                         type='button'
                         onClick = {connectWallet}
-                        className='flex flex-row justify-center items-center my-5 w-full bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd] border-transparent'
+                        className='flex flex-row justify-center items-center my-5 w-full bg-yellow-600 p-3 rounded-full cursor-pointer hover:bg-yellow-700 border-transparent'
                     >
                         <p className='text-white text-base font-semibold'> Connect Wallet </p>
                     </button>

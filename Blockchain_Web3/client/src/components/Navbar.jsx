@@ -24,7 +24,7 @@ const Navbar = () => {
                 {["Market", "DEX", "Tutorials", "MyPortfolio", "Wallets"].map((item, index) => (
                     <NavbarItem key={item + index} title={item}/>
                 ))}
-                <li className='bg-[#2952e5] py-2 px-5 mx-4 rounded-full cursos-pointer hover:bg-[#2546bd]'>
+                <li className='bg-yellow-600 py-2 px-5 mx-4 rounded-full cursos-pointer hover:bg-yellow-700'>
                     Login
                 </li>
             </ul>
