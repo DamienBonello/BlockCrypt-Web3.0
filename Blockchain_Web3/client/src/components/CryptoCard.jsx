@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AiFillPlayCircle } from 'react-icons/ai';
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
-
+import { shortenAddress } from '../utils/shortenAddress';
 import { TransactionContext } from '../context/TransactionContext';
 import {Loader} from './';
 
@@ -33,21 +33,19 @@ const CryptoCard = () => {
     return (
         <div className='flex w-full justify-center items-center'>
         <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 px-10'>
-            <div className='flex flex-1 justify-start items-start flex-col mf:mr-10 mt-10'>
+            <div className='flex flex-1 justify-start items-start flex-col ml-10 mt-10'>
                 <h1 className='text-3xl sm:text-5xl text-white py-5'>
-                    Subscribe today to start benefiting.
+                    Costs? What Costs? <br />Totally free!
                 </h1>
-                <p className='text-left mt-5 text-white font-light md:w-full w-full text-base'>
-                    P.S. Payments are Secured and Powered by Ethereum, we go the fees covered.
-                </p>
-                <p className='text-left mt-5 text-white font-light md:w-full w-full text-base'>
-                    You can monitor our progress transparently, we post our trades online for you <br/> to view. So rest assured that we are not just dumping the stock right after.
+                <p className='text-left mt-5 text-white font-light md:w-9/12 w-9/12 text-base'>
+                    We don't believe that you should pay to learn and be informed! Our service is totally FREE.
+                    A donation will be much appreciated to keep the services going and maybe one day, who knows, an Airdrop might happen!
                 </p>
                 { !currentAccount && (
                     <button
                         type='button'
                         onClick = {connectWallet}
-                        className='flex flex-row justify-center items-center my-10 w-full bg-yellow-600 p-3 rounded-full cursor-pointer hover:bg-yellow-700 border-transparent'
+                        className='flex flex-row justify-center items-center my-10 w-9/12 bg-yellow-600 p-3 rounded-full cursor-pointer hover:bg-yellow-700 border-transparent'
                     >
                         <p className='text-white text-base font-semibold'> Connect Wallet </p>
                     </button>
@@ -65,7 +63,7 @@ const CryptoCard = () => {
                             </div>
                             <div>
                                 <p className='text-white font-light text-sm'>
-                                    Address
+                                    {shortenAddress(currentAccount)}
                                 </p>
                                 <p className='text-white font-semibokd text-lg mt-1'>
                                     Ethereum
