@@ -2,14 +2,14 @@ import {Navbar, Footer, Services, Transactions, Welcome, CryptoCard} from './com
 
 const App = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
       <div className='gradient-bg-welcome'>
         <Navbar />
         <Welcome />
         <CryptoCard />
       </div>
-      <Transactions />
       <Services />
+      <Transactions />
       <Footer /> 
     </div>
   );
