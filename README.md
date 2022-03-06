@@ -8,7 +8,7 @@ Aim is to create a Crypto Research Platform with multiple functionality.
 
 This project now features;
 
--Smart Contracts interactivity via MetaMask;
--Multi-Page navigation via React-Routing;
--API via Axios through CoinGecho
+-Smart Contracts interactivity via MetaMask;</br>
+-Multi-Page navigation via React-Routing;</br>
+-API via Axios through CoinGecko</br>
 
