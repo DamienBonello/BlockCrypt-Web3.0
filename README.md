@@ -6,5 +6,9 @@ Test Web Development Project;
 
 Aim is to create a Crypto Research Platform with multiple functionality.
 
-Next is to work on Smart Contract capabilities to be used on the front page of the website. 
+This project now features;
+
+-Smart Contracts interactivity via MetaMask;
+-Multi-Page navigation via React-Routing;
+-API via Axios through CoinGecho
 
