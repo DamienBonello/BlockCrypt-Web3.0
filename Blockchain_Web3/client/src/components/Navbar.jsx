@@ -4,6 +4,8 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 import logo from '../../images/icon.png';
 
+import {Link} from 'react-router-dom'
+
 const NavbarItem = ({ title, classProps }) => {
     return (
         <li className={`mx-4 cursor-pointer ${classProps}`}>
@@ -20,10 +22,19 @@ const Navbar = () => {
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'></img>
             </div>
-            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["Market", "DEX", "Tutorials", "MyPortfolio", "Wallets"].map((item, index) => (
-                    <NavbarItem key={item + index} title={item}/>
-                ))}
+            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial flex space-x-7'>
+                <li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/DEX'>DEX</Link>
+                </li>
+                <li>
+                    <Link to='/Portfolio'>myPortfolio</Link>
+                </li>
+                <li>
+                    <Link to='/Tutorials'>Tutorials</Link>
+                </li>
                 <li className='bg-yellow-600 py-2 px-5 mx-4 rounded-full cursos-pointer hover:bg-yellow-700'>
                     Login
                 </li>
@@ -35,14 +46,23 @@ const Navbar = () => {
                 {toggleMenu && (
                     <ul
                         className='z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
-                        flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in'
+                        flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in text-2xl'
                     >
                         <li className='text-xl w-full my-2'>
                             <AiOutlineClose onClick={() => setToggleMenu(false)} />
                         </li>
-                        {["Market", "DEX", "Tutorials", "MyPortfolio", "Wallets"].map((item, index) => (
-                            <NavbarItem key={item + index} title={item} classProps='my-2 text-lg'/>
-                        ))}        
+                        <li>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/DEX'>DEX</Link>
+                        </li>
+                        <li>
+                            <Link to='/Portfolio'>myPortfolio</Link>
+                        </li>
+                        <li>
+                            <Link to='/Tutorials'>Tutorials</Link>
+                        </li>        
                     </ul>
                 )}            
             </div>

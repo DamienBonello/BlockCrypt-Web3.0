@@ -33,11 +33,11 @@ const CryptoCard = () => {
     return (
         <div className='flex w-full justify-center items-center'>
         <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 px-10'>
-            <div className='flex flex-1 justify-start items-start flex-col ml-10 mt-10'>
-                <h1 className='text-3xl sm:text-5xl text-white py-5'>
+            <div className='flex flex-1 justify-start items-start flex-col ml-10 mt-10 m-auto'>
+                <h1 className='text-3xl sm:text-5xl text-white py-5 m-auto'>
                     Costs? What Costs? <br />Totally free!
                 </h1>
-                <p className='text-left mt-5 text-white font-light md:w-9/12 w-9/12 text-base'>
+                <p className='text-left mt-5 text-white font-light md:w-9/12 w-9/12 text-base m-auto'>
                     We don't believe that you should pay to learn and be informed! Our service is totally FREE.
                     A donation will be much appreciated to keep the services going and maybe one day, who knows, an Airdrop might happen!
                 </p>
@@ -45,14 +45,14 @@ const CryptoCard = () => {
                     <button
                         type='button'
                         onClick = {connectWallet}
-                        className='flex flex-row justify-center items-center my-10 w-9/12 bg-yellow-600 p-3 rounded-full cursor-pointer hover:bg-yellow-700 border-transparent'
+                        className='flex flex-row justify-center items-center my-10 w-9/12 bg-yellow-600 p-3 rounded-full cursor-pointer hover:bg-yellow-700 border-transparent m-auto'
                     >
                         <p className='text-white text-base font-semibold'> Connect Wallet </p>
                     </button>
                 )}
             </div>
 
-            <div className="flex flex-row flex-col flex-1 items-center justify-start w-full mf:mt-10 mt-0">
+            <div className="flex flex-row flex-col flex-1 items-center justify-start w-9/12 md:w-full mf:mt-10 mt-0 m-auto">
                     <div className="p-3 flex-row flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
                         <div className="flex justify-between flex-col w-full h-full">
                             <div className="flex justify-between items-start">

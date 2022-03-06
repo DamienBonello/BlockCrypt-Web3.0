@@ -14,7 +14,7 @@ const Welcome = () => {
                         Explore our Dashboard and gain Alpha from our Insights.
                     </p>
 
-                    <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10'>
+                    <div className='grid sm:grid-cols-3 grid-cols-2 w-full mt-10 m-auto'>
                         <div className={`rounded-tl-2xl rounded-bl-2xl ${commonStyles}`}>
                            Data Driven
                         </div>
