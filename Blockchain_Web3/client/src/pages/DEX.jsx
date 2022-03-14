@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Coin from '../hooks/Coin';
+import { Footer } from '../components';
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -27,41 +28,30 @@ function App() {
   );
 
   return (
-    <div className='coin-app gradient-bg-welcome text-white'>
-      <div className='coin-search flex justify-center py-5'>
-        <h1 className='coin-text py-2 px-5 mr-5'>Search a currency</h1>
-        <form>
-          <input
-            className='coin-input text-black'
-            type='text'
-            onChange={handleChange}
-            placeholder='Search'
-          />
-        </form>
+      <div className='coin-app gradient-bg-welcome text-white min-h-screen'>
+        <div className='w-full text-3xl text-color:white text-center py-10 font-bold'>
+          Top 100 Cryptocurrencies by Market Cap 
+        </div>
+         {filteredCoins.map(coin => {
+          return (
+            <Coin
+              key={coin.id}
+              name={coin.name}
+              price={coin.current_price}
+              symbol={coin.symbol}
+              marketcap={coin.market_cap}
+              volume={coin.total_volume}
+              image={coin.image}
+              priceChange={coin.price_change_percentage_24h}
+            />
+          );
+        })}
+        <div className='mt-10'>
+         <Footer/>
+        </div>
       </div>
-      <ul className='w-7/12 text-white text-2xl flex-row justify-between items-center flex m-auto py-4 px-2 border-solid border-b-4 border-white'>
-        <li>Ticker</li>
-        <li>Symbol</li>
-        <li>Price</li>
-        <li>%Change</li>  
-        <li>Market Cap</li>
-        <li>Volume</li>
-      </ul>
-      {filteredCoins.map(coin => {
-        return (
-          <Coin
-            key={coin.id}
-            name={coin.name}
-            price={coin.current_price}
-            symbol={coin.symbol}
-            marketcap={coin.market_cap}
-            volume={coin.total_volume}
-            image={coin.image}
-            priceChange={coin.price_change_percentage_24h}
-          />
-        );
-      })}
-    </div>
+    
+
   );
 }
 

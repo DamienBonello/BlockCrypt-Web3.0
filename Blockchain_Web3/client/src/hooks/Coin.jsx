@@ -11,8 +11,8 @@ const Coin = ({
   priceChange
 }) => {
   return (
-    <div className='coin-container'>
-      <div className='coin-row'>
+    <div className='coin-container'> 
+      <div className='coin-row hover:opacity-70 hover:bg-blue-700'>
         <div className='coin'>
           <img src={image} alt='crypto' />
           <h1>{name}</h1>
@@ -28,9 +28,9 @@ const Coin = ({
           )}
 
           <p className='coin-marketcap'>
-            ${marketcap.toLocaleString()}
+            MC - ${marketcap.toLocaleString()}
           </p>
-          <p className='coin-volume'>${volume.toLocaleString()}</p>
+          <p className='coin-volume'>Vol - ${volume.toLocaleString()}</p>
 
         </div>
       </div>

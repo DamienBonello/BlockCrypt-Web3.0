@@ -20,22 +20,22 @@ const Navbar = () => {
     return (
         <nav className='w-full flex md:justify-center justify-between items-center p-4'>
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
-                <img src={logo} alt='logo' className='w-32 cursor-pointer'></img>
+                <img src={logo} alt='logo' className='w-32'></img>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial flex space-x-7'>
-                <li>
+                <li className='hover:text-yellow-500'>
                     <Link to='/'>Home</Link>
                 </li>
-                <li>
+                <li className='hover:text-yellow-500'>
                     <Link to='/DEX'>DEX</Link>
                 </li>
-                <li>
+                <li className='hover:text-yellow-500'>
                     <Link to='/Portfolio'>myPortfolio</Link>
                 </li>
-                <li>
+                <li className='hover:text-yellow-500'>
                     <Link to='/Tutorials'>Tutorials</Link>
                 </li>
-                <li className='bg-yellow-600 py-2 px-5 mx-4 rounded-full cursos-pointer hover:bg-yellow-700'>
+                <li className='bg-yellow-600 py-2 px-5 mx-4 rounded-full cursor-pointer hover:bg-yellow-700'>
                     Login
                 </li>
             </ul>
